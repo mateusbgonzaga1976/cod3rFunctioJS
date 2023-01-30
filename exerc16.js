@@ -1,29 +1,29 @@
 function calculator(num1, oper, num2){
     switch(oper){
-        case 'add':
+        case '+':
             return num1 + num2;
-        case 'minus':
+        case '-':
             return num1 - num2;
-        case 'mult':
+        case '*':
             return num1 * num2;
         case 'divide':
             return (num1 / num2).toFixed(2);
-        case 'mod':
+        case '%':
             return num1 % num2;
-        case 'pow':
+        case '**':
             return num1 ** num2;
-        case 'sqrt':
+        case '*/':
             return num1 * 1/num2;
         default:
             return 'invalid data';
     }
 }
 
+console.log(calculator(9, '+', 3));
+console.log(calculator(9, '-', 3));
+console.log(calculator(9, '*', 3));
+console.log(calculator(9, '/', 3));
+console.log(calculator(9, '%', 3));
+console.log(calculator(9, '**', 3));
+console.log(calculator(9, '*/', 3));
 console.log(calculator(9, 'add', 3));
-console.log(calculator(9, 'minus', 3));
-console.log(calculator(9, 'mult', 3));
-console.log(calculator(9, 'divide', 3));
-console.log(calculator(9, 'mod', 3));
-console.log(calculator(9, 'pow', 3));
-console.log(calculator(9, 'sqrt', 3));
-console.log(calculator(9, 'soma', 3));
